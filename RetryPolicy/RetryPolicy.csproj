@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>RetryPolicy.DefineRetryPolicy</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AWSSDK">
       <HintPath>..\packages\AWSSDK.2.0.15.1\lib\net35\AWSSDK.dll</HintPath>
@@ -62,9 +65,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OptoutOfErrorQueue.cs" />
     <Compile Include="OrderAccepted.cs" />
     <Compile Include="OrderProcessor.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="DefineRetryPolicy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
