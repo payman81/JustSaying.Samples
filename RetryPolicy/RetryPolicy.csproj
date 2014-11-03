@@ -35,8 +35,9 @@
     <StartupObject>RetryPolicy.DefineRetryPolicy</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AWSSDK">
-      <HintPath>..\packages\AWSSDK.2.0.15.1\lib\net35\AWSSDK.dll</HintPath>
+    <Reference Include="AWSSDK, Version=2.0.3.1, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AWSSDK.2.0.3.1\lib\net35\AWSSDK.dll</HintPath>
     </Reference>
     <Reference Include="JustSaying">
       <HintPath>..\packages\JustSaying.2.0.0.195\lib\net40\JustSaying.dll</HintPath>
