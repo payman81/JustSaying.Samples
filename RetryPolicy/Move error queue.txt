@@ -1,0 +1,2 @@
+﻿cd RetryPolicy\bin\Debug
+JustSaying.Tools.exe move -from "customerorders_error" -to "customerorders" -count "2"

@@ -12,7 +12,7 @@ namespace RetryPolicy
             
             CreateMeABus.InRegion(RegionEndpoint.EUWest1.SystemName)
                 .WithSqsTopicSubscriber()
-                .IntoQueue("CustomerOrders-custom-retry-policy")
+                .IntoQueue("CustomerOrders")
                 .ConfigureSubscriptionWith(cnf =>
                 {
                     cnf.RetryCountBeforeSendingToErrorQueue = 3;
